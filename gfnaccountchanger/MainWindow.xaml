@@ -1,0 +1,48 @@
+﻿<Window x:Class="GeforceNowAccountChanger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="GeforceNow Account Changer" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" ></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*" ></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Button Width="172" HorizontalAlignment="Right" Click="selectFolder" Margin="0,0,100,0" Grid.ColumnSpan="2">
+                <WrapPanel>
+                    <TextBlock Text="Select Geforce Now Folder"></TextBlock>
+                </WrapPanel>
+            </Button>
+            <Button Width="100" HorizontalAlignment="Right" Click="addAccount" Grid.Column="1">
+                <WrapPanel>
+                    <TextBlock Text="Add Account"></TextBlock>
+                </WrapPanel>
+            </Button>
+
+
+        </Grid>
+
+        <ListView Name="AccountList" Grid.Row="1" HorizontalContentAlignment="Stretch">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel      >
+                        <StackPanel Orientation="Horizontal" Width="Auto" PreviewMouseLeftButtonUp="openAccount">
+                            <TextBlock Text="{Binding AccountName}" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"  />
+                        </StackPanel>
+                        <Button Click="deleteAccount" Margin="5" Height="Auto" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Right" DockPanel.Dock="Right" >
+                            <Image Source="/delete.png" HorizontalAlignment="Right" Height="25" Width="25"  />
+                        </Button>
+                    </DockPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

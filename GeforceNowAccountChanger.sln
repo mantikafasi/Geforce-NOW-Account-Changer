@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gfnaccountchanger", "gfnaccountchanger\gfnaccountchanger.csproj", "{3EB778B3-2429-481F-8D39-8882E141BE82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EB778B3-2429-481F-8D39-8882E141BE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB778B3-2429-481F-8D39-8882E141BE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB778B3-2429-481F-8D39-8882E141BE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB778B3-2429-481F-8D39-8882E141BE82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5538380-0ADC-4256-90E3-6480A698156F}
+	EndGlobalSection
+EndGlobal
